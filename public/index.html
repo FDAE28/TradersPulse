@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TraderPulse - Seguimiento de Mercados Financieros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a TraderPulse</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#markets" class="dropbtn">Mercados</a>
+                    <div class="dropdown-content">
+                        <a href="#currencies" class="subdropbtn">Divisas</a>
+                        <div class="subdropdown-content">
+                            <a href="#eurusd-container">EUR/USD</a>
+                            <a href="#gbpusd-container">GBP/USD</a>
+                            <a href="#usdjp-container">USD/JPY</a>
+                        </div>
+                        <a href="#commodities" class="subdropbtn">Materias Primas</a>
+                        <div class="subdropdown-content">
+                            <a href="#gold-container">Oro</a>
+                            <a href="#oil-container">Petróleo</a>
+                        </div>
+                        <a href="#indices" class="subdropbtn">Índices</a>
+                        <div class="subdropdown-content">
+                            <a href="#nasdaq-container">Nasdaq 100</a>
+                            <a href="#sp500-container">S&P 500</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Seguimiento de los Mercados</h2>
+            <p>Aquí encontrarás información actualizada sobre los principales mercados financieros, con gráficos y análisis.</p>
+        </section>
+        <section id="markets">
+            <h2>Información de Mercados</h2>
+            <div class="market-container">
+                <div id="eurusd-container" class="market">
+                    <h3>EUR/USD - Cotización Actual</h3>
+                    <p id="eurusd-price">Cargando datos...</p>
+                    <p id="eurusd-change">Cargando datos...</p>
+                    <p id="eurusd-high">Cargando datos...</p>
+                    <p id="eurusd-low">Cargando datos...</p>
+                    <p id="eurusd-open">Cargando datos...</p>
+                    <div id="eurusd-chart">Gráfico del mercado...</div>
+                    <button id="eurusd-buy-button" class="action-button">Comprar</button>
+                    <button id="eurusd-sell-button" class="action-button">Vender</button>
+                </div>
+                <div id="gbpusd-container" class="market">
+                    <h3>GBP/USD - Cotización Actual</h3>
+                    <p id="gbpusd-price">Cargando datos...</p>
+                    <p id="gbpusd-change">Cargando datos...</p>
+                    <p id="gbpusd-high">Cargando datos...</p>
+                    <p id="gbpusd-low">Cargando datos...</p>
+                    <p id="gbpusd-open">Cargando datos...</p>
+                    <div id="gbpusd-chart">Gráfico del mercado...</div>
+                    <button id="gbpusd-buy-button" class="action-button">Comprar</button>
+                    <button id="gbpusd-sell-button" class="action-button">Vender</button>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>TraderPulse © 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
